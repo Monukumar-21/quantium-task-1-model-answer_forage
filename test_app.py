@@ -1,10 +1,9 @@
 import pytest
 from dash.testing.application_runners import import_app
 
-# Import your Dash app (assuming it's saved as app.py)
 @pytest.fixture
 def dash_app():
-    app = import_app("app")  # "app" is the filename without .py
+    app = import_app("app") 
     return app
 
 
